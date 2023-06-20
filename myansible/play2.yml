@@ -5,3 +5,4 @@
   - name: i want toinstall tree
     apt:
       name: tree
+      update_cache: yes
