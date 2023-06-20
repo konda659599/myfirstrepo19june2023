@@ -2,8 +2,7 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: i want to install webserver on ubuntu ansible nodes
+  - name: i want toinstall tree
     apt:
       name: tree
       state: present
-    when: ansible_os_family =="debian"
