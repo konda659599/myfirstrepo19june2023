@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+
+- tasks:
+- package:
+    name: httpd
+    state: present
+- service:
+    name: httpd
+    start: restarted
