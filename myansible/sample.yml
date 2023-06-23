@@ -2,8 +2,8 @@
 - hosts: all
   tasks:
   - package:
-    name: "httpd"
+      name: "httpd"
     state: present
-- service:
-    name: "httpd"
-    start: restarted
+  - service:
+      name: "httpd"
+      start: started
