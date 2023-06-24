@@ -4,6 +4,6 @@
  172.31.9.136
 
 
-[webservers: vars]
+[webservers:vars]
  webpackonubuntu= apache2
  webpackonredhat= httpd
