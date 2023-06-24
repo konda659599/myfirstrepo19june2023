@@ -1,3 +1,9 @@
+[webservers]
 172.31.12.100
 172.31.11.118
 172.31.9.136
+
+
+[webservers: vars]
+webpackonubuntu= apache2
+webpackonredhat= httpd
