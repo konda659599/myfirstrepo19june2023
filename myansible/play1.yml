@@ -44,9 +44,5 @@
       state: present
     when: ansible_os_family =="RedHat"
 
-  - name: i want to start java on ubuntu nodes 
-    service:
-      name: "{{myjavaonredhat}}"
-      state: started
-    when: ansible_os_family =="Debian"
+  
 
