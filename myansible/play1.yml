@@ -25,3 +25,28 @@
        name: "{{webpackonredhat}}"
        state: restarted  
     when: ansible_os_family =="RedHat"
+
+  - name: i want to install java on ubuntu nodes 
+    apt:
+      name: openjdk-8-jre
+      state: present
+    when: ansible_os_family =="Debian"
+
+  - name: i want to start java on ubuntu nodes 
+    service:
+      name: openjdk-8-jre
+      state: started
+    when: ansible_os_family =="Debian"
+
+  - name: i want to install java on redhat nodes 
+    yum:
+      name: java-1.8.0-openjdk
+      state: present
+    when: ansible_os_family =="RedHat"
+
+  - name: i want to start java on ubuntu nodes 
+    service:
+      name: java-1.8.0-openjdk
+      state: started
+    when: ansible_os_family =="Debian"
+
