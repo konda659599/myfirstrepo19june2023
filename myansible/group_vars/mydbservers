@@ -1,2 +1,3 @@
 ---
-mywebpackonredhat: apache2
+mywebpackonredhat: httpd
+mywebpackonubuntu: apache2
