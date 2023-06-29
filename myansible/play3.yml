@@ -1,5 +1,5 @@
 ---
-- hosts: mydbservers
+- hosts: all
   become: yes
   tasks: 
   - name: i want to install webserver on ubuntu
