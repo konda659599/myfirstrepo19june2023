@@ -2,23 +2,20 @@
 - hosts: 172.31.28.23
   become: yes
   tasks:
-  - name: execute linux command 
-    command: hostname -f
-    register: myresult
-
-  - name: i want to display my first task result 
-    debug:
-       msg: "{{myresult}}" 
-
   - name: install git 
     yum: 
       name: git 
       state: present
-    when: myresult.stderr !=""
-  
+    tags: mygit  
+    
   - name: install tree
     yum: 
       name: tree
       state: present
-    when: myresult.stderr ==""  
-
+    tags: mytree  
+    
+  - name: install tree
+    yum: 
+      name: wget
+      state: present
+    tags: mywget    
