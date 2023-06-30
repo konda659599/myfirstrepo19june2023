@@ -6,6 +6,6 @@
     myvar02: tree
     myvar03: wget
   tasks:
-  -name: i want to disply myvar02
-  debug:
+- name: i want to disply myvar02
+  Debug:
     msg: "{{myvar02}}"  
