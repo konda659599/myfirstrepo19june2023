@@ -7,11 +7,11 @@
       name: git
       state: present
     register: myresult
-    when: myresult.stderr !== " "
+    when: myresult.stderr !==" "
 
   - name: install git 
     apt: 
       name: tree
       state: present
     register: myresult  
-    when: myresult.stderr == " "
+    when: myresult.stderr ==" "
