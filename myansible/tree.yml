@@ -6,7 +6,8 @@
     yum: 
       name: git 
       stateeeee: present
-    tags: mygit  
+    tags: mygit 
+    ignore_errors: true 
     
   - name: install tree
     yum: 
