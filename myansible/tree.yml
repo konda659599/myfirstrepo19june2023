@@ -5,7 +5,7 @@
   - name: install git 
     yum: 
       name: git 
-      state: present
+      stateeeee: present
     tags: mygit  
     
   - name: install tree
