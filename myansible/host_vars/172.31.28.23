@@ -1,2 +1,2 @@
 ---
-myjavaonredhat: openjdk-8-jre
+myjavaonredhat: java-1.7.0-openjdk
