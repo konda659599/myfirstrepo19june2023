@@ -1,0 +1,11 @@
+---
+- hosts: 172.31.28.23
+  become: yes
+  vars:
+    myvar01: git
+    myvar02: tree
+    myvar03: wget
+  tasks:
+- name: i want to disply myvar02
+  debug:
+    msg: "{{myvar02}}"  
