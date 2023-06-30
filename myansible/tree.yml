@@ -7,6 +7,6 @@
     myvar03: wget
   
   tasks:
-- name: i want to disply myvar02
-  Debug:
-    msg: "{{myvar02}}"  
+  - name: i want to disply myvar02
+    Debug:
+      msg: "{{myvar02}}"  
