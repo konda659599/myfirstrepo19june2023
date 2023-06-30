@@ -1,0 +1,8 @@
+---
+- hosts: 172.31.28.23
+  become: yes
+  tasks:
+  - name: create a file
+    file: 
+      path: /root/home/konda/myfile.txt
+      state: touch
