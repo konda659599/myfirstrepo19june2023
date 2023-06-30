@@ -13,13 +13,13 @@
 
 
   - name: install git 
-    apt: 
+    yum: 
       name: git 
       state: present
     when: myresult.stderr !==""
   
   - name: install tree
-    apt: 
+    yum: 
       name: tree
       state: present
     when: myresult.stderr ==""  
