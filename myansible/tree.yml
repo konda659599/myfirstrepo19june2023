@@ -9,4 +9,4 @@
   tasks:
   - name: i want to disply myvar02
     debug:
-      msg: "{{myvar02}}"  
+      msg: "{{myvar03}}"  
