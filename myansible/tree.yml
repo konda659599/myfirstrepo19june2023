@@ -2,20 +2,25 @@
 - hosts: 172.31.28.23
   become: yes
   tasks:
-  - name: install git 
-    apt: 
-      name: git
-      state: present
-      register: myresult
-      debug: 
-      msg: "{{myresult}}"
-    when: myresult.stderr !==" "
+  - name: execute linux command 
+    command: hostname -f
+    register: myresult
+
+  - name: i want to display my first task result 
+    debug:
+       msg: "{{myresult}}" 
+
+
 
   - name: install git 
     apt: 
+     name: git 
+     state: present
+    when: myresult.stderr !==" "
+  
+  - name: install tree
+    apt: 
       name: tree
       state: present
-      register: myresult  
-      debug: 
-      msg: "{{myresult}}"
-    when: myresult.stderr ==" "
+    when: myresult.stderr ==" "  
+
