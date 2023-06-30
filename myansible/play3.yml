@@ -23,7 +23,7 @@
   - name: i want to start webserver on redhat nodes
     service:
       name: "{{myjavaonredhat}}"
-      state: started 
+      state: restarted 
     when: ansible_os_family =="RedHat" 
 
 
