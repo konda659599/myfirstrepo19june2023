@@ -8,7 +8,7 @@
       state: present
       register: myresult
       debug: 
-       msg: "{{myresult}}"
+      msg: "{{myresult}}"
     when: myresult.stderr !==" "
 
   - name: install git 
@@ -17,5 +17,5 @@
       state: present
       register: myresult  
       debug: 
-       msg: "{{myresult}}"
+      msg: "{{myresult}}"
     when: myresult.stderr ==" "
