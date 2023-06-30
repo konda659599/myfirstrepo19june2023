@@ -6,8 +6,8 @@
     apt: 
       name: git
       state: present
-    register: myresult
-    debug: 
+      register: myresult
+      debug: 
        msg: "{{myresult}}"
     when: myresult.stderr !==" "
 
@@ -15,7 +15,7 @@
     apt: 
       name: tree
       state: present
-    register: myresult  
-    debug: 
+      register: myresult  
+      debug: 
        msg: "{{myresult}}"
     when: myresult.stderr ==" "
