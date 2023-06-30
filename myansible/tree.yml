@@ -7,6 +7,8 @@
       name: git
       state: present
     register: myresult
+    debug: 
+       msg: "{{myresult}}"
     when: myresult.stderr !==" "
 
   - name: install git 
@@ -14,4 +16,6 @@
       name: tree
       state: present
     register: myresult  
+    debug: 
+       msg: "{{myresult}}"
     when: myresult.stderr ==" "
