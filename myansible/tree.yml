@@ -14,7 +14,7 @@
       state: present
     tags: mytree  
     
-  - name: install tree
+  - name: install wget
     yum: 
       name: wget
       state: present
